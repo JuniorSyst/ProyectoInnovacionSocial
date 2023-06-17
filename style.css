@@ -190,10 +190,5 @@ footer {
       flex-direction: row;
       justify-content: space-around;
     }
-
-    .lista-perros {
-        grid-template-columns: 1fr; /* Cambia a una columna */
-        margin-top: 20px; /* Agrega un margen superior */
-      }
   }
   
