@@ -1,0 +1,172 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+/* Estilos para el navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navbar .enlaces {
+  text-decoration: none;
+  color: #333;
+  position: relative;
+}
+
+.navbar .enlaces::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: red;
+  transition: width 0.8s ease-in-out;
+}
+
+.navbar .enlaces:hover::after {
+  width: 100%;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin-right: 20px;
+}
+
+.navbar ul li .enlaces {
+  color: white;
+  font-weight: bold;
+  transition: color 0.3 ease-in-out;
+}
+
+.navbar ul li .enlaces:hover {
+  color: red;
+  transition-delay: 0.5;
+}
+
+/* Estilos para el logo */
+.logo {
+  max-width: 100px;
+  transition: filter 0.3s ease-in-out;
+}
+
+.logo:hover {
+  filter: brightness(1.2);
+}
+
+/* Estilos para los enlaces del navbar */
+.navbar a {
+  text-decoration: none;
+  color: #333;
+}
+
+section {
+  padding: 20px;
+  margin-top: 80px; /* Ajusta el margen superior para evitar que el contenido se superponga con la barra de navegación */
+}
+
+h2 {
+  margin-top: 70px;
+  color: #333;
+  text-align: center;
+}
+
+.lista-perros {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-gap: 20px;
+}
+
+.perro,
+.perro-perdido {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.perro img,
+.perro-perdido img {
+  width: 100%;
+  height: auto;
+}
+
+.perro,
+.perro-perdido {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.perro img,
+.perro-perdido img {
+  width: 100%;
+  height: auto;
+}
+
+.nombre-del-perro {
+    font-size: 20px;
+    text-align: center;
+}
+
+.descripcion-perro {
+    text-align: justify;
+}
+
+.contacto-boton {
+    padding: 10px 10px;
+    display: flex;
+    background-color: rgb(34, 173, 34);
+    justify-content: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+.contacto-boton:hover {
+    background-color: green;
+}
+
+.telefono {
+  font-weight: bold;
+}
+
+footer {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+.derechos-autor {
+  color: white;
+}
+
+.autor {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.autor:hover {
+    color: wheat;
+}
