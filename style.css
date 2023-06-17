@@ -59,6 +59,7 @@ header {
   color: white;
   font-weight: bold;
   transition: color 0.3 ease-in-out;
+  font-size: 15px;
 }
 
 .navbar ul li .enlaces:hover {
@@ -189,5 +190,10 @@ footer {
       flex-direction: row;
       justify-content: space-around;
     }
+
+    .lista-perros {
+        grid-template-columns: 1fr; /* Cambia a una columna */
+        margin-top: 20px; /* Agrega un margen superior */
+      }
   }
   
