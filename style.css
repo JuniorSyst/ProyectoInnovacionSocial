@@ -85,7 +85,7 @@ header {
 
 section {
   padding: 20px;
-  margin-top: 80px; /* Ajusta el margen superior para evitar que el contenido se superponga con la barra de navegación */
+  margin-top: 100px; /* Ajusta el margen superior para evitar que el contenido se superponga con la barra de navegación */
 }
 
 h2 {
